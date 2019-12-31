@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"   android:background="@drawable/bg_login"  android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iconlogin"
+        android:layout_width="100dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login"
+ />
+
+
+    <TextView
+        android:id="@+id/welcomeuser"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textColor="@color/login_form_details"
+        android:gravity="center"
+        android:layout_below="@+id/iconlogin"
+        android:layout_centerHorizontal="true"
+        android:text="欢迎你！。。。。。用户" />
+
+
+    <ImageButton
+        android:id="@+id/sendpackage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="21dp"
+        android:background="@drawable/image_button"
+        android:src="@mipmap/sendpackage_a" />
+
+    <TextView
+        android:id="@+id/sendpackagetext"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sendpackage"
+        android:layout_below="@+id/sendpackage"
+        android:gravity="center"
+        android:text="在线寄件"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/order"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/image_button"
+        android:src="@mipmap/login" />
+
+    <TextView
+        android:id="@+id/ordertext"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendpackage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="订单"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/queryorder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/image_button"
+        android:src="@mipmap/login" />
+
+    <TextView
+        android:id="@+id/queryordertext"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/queryorder"
+        android:layout_below="@+id/sendpackage"
+        android:gravity="center"
+        android:text="查快递"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/introduction"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/introductiontext"
+        android:layout_alignStart="@+id/sendpackage"
+        android:background="@drawable/image_button"
+        android:src="@mipmap/login" />
+
+    <TextView
+        android:id="@+id/introductiontext"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sendpackage"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        android:text="功能详情"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp" />
+
+</RelativeLayout>
