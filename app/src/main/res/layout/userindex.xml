@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"   android:background="@drawable/bg_login"  android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/iconlogin"
+    <ImageButton
+        android:id="@+id/info"
         android:layout_width="100dp"
         android:layout_height="86dp"
         android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/image_button"
         android:src="@mipmap/login"
  />
 
@@ -49,7 +50,7 @@
         android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:background="@drawable/image_button"
-        android:src="@mipmap/login" />
+        android:src="@mipmap/ordera" />
 
     <TextView
         android:id="@+id/ordertext"
@@ -70,7 +71,7 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="20dp"
         android:background="@drawable/image_button"
-        android:src="@mipmap/login" />
+        android:src="@mipmap/queryordera" />
 
     <TextView
         android:id="@+id/queryordertext"
@@ -90,7 +91,7 @@
         android:layout_above="@+id/introductiontext"
         android:layout_alignStart="@+id/sendpackage"
         android:background="@drawable/image_button"
-        android:src="@mipmap/login" />
+        android:src="@mipmap/queryordera" />
 
     <TextView
         android:id="@+id/introductiontext"
