@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"   android:background="@drawable/bg_login"  android:layout_height="match_parent">
     <ImageButton
-        android:id="@+id/info"
+        android:id="@+id/userinfo"
         android:layout_width="100dp"
         android:layout_height="86dp"
         android:layout_marginTop="70dp"
@@ -18,7 +18,7 @@
         android:layout_height="36dp"
         android:textColor="@color/login_form_details"
         android:gravity="center"
-        android:layout_below="@+id/iconlogin"
+        android:layout_below="@+id/userinfo"
         android:layout_centerHorizontal="true"
         android:text="欢迎你！。。。。。用户" />
 
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/sendpackage"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="75dp"
         android:gravity="center"
         android:text="功能详情"
         android:textColor="@color/login_form_details"

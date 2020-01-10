@@ -27,4 +27,11 @@ public interface ApiService {
     @POST("user/signup")
     Call<Map<String,Object>> postSignUp(@Field("username") String username, @Field("password") String password,
                                         @Field("phone")String phone,@Field("realname")String real_name);
+
+    @FormUrlEncoded
+    @POST("user/submitpackage")
+    Call<Map<String,Object>> postSubmitPackage(@Field("spr") String spregiont, @Field("spdt") String spdetailsregiont,
+                                               @Field("dpr")String dpregiont,@Field("dpdt")String dpregiondetailst,@Field("uid")int uid,
+                                               @Field("size")String size
+      );
 }

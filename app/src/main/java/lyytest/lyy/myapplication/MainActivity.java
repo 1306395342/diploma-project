@@ -65,10 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     error.setText("用户名或密码错误！");
                 }
                 else{
-                    //Toast.makeText(getApplicationContext(),"登陆成功",Toast.LENGTH_LONG).show();
                     error.setText("");
                     SharedPreferences.Editor editor=getSharedPreferences("data",MODE_PRIVATE).edit();
-                    SharedPreferences sp = getSharedPreferences("data",MODE_PRIVATE);
                     editor.putInt("IsLogin",1);
                     editor.putInt("firstLogin",1);
                     editor.putString("token",res.get("token").toString());
@@ -78,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     editor.putInt("uid",new Double((Double) res.get("id")).intValue());
                     editor.putString("realname",res.get("realname").toString());
                     editor.apply();
+                    Toast.makeText(getApplicationContext(),"登陆成功",Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
                     startActivity(intent);
                 }

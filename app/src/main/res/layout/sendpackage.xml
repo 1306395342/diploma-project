@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"    android:background="@drawable/bg_login" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sendpackagelogo"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/login" />
+
+    <ImageView
+        android:id="@+id/startingicon1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="178dp"
+        android:src="@mipmap/startingicon" />
+
+    <ImageView
+        android:id="@+id/startingicon2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/startingicon1"
+        android:layout_marginTop="231dp"
+        android:src="@mipmap/startingicon" />
+
+    <ImageView
+        android:id="@+id/destinationicon1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/startingicon1"
+        android:layout_marginBottom="253dp"
+        android:src="@mipmap/destinationicon" />
+
+    <ImageView
+        android:id="@+id/destinationicon2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/startingicon1"
+        android:layout_marginBottom="188dp"
+        android:src="@mipmap/destinationicon" />
+
+    <EditText
+        android:id="@+id/spdetailsregion"
+        android:layout_width="289dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/et_bg"
+        android:hint="出发地(starting)详细地址"
+        android:padding="15dp"
+        android:textColorHint="@color/login_form_details" />
+
+    <EditText
+        android:id="@+id/spregion"
+        android:layout_width="289dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:background="@drawable/et_bg"
+        android:hint="出发地(starting) 省市区"
+        android:padding="15dp"
+        android:textColorHint="@color/login_form_details" />
+
+    <EditText
+        android:id="@+id/dpregion"
+        android:layout_width="289dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="234dp"
+        android:background="@drawable/et_bg"
+        android:hint="目的地(destination) 省市区"
+        android:padding="15dp"
+        android:textColorHint="@color/login_form_details" />
+
+    <EditText
+        android:id="@+id/dpdetailsregion"
+        android:layout_width="289dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:background="@drawable/et_bg"
+        android:hint="目的地(destination) 详细地址"
+        android:padding="15dp"
+        android:textColorHint="@color/login_form_details" />
+
+     
+
+    <Spinner
+        android:id="@+id/size"
+        android:layout_width="264dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:entries="@array/auto" />
+
+    <Button
+        android:id="@+id/btn_submitpackage"
+        android:layout_width="290dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/btn_bg"
+        android:text="寄出你的快递"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium" />
+
+    <TextView
+        android:id="@+id/errorsubmitpackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text=""
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+</RelativeLayout>
