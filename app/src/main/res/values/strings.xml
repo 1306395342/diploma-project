@@ -11,4 +11,16 @@
            
     </string-array>
 
+
+    <string-array name="reason">
+               
+        <item>物件损坏</item>
+               
+        <item>快递员服务态度极其恶劣</item>
+
+        <item>送货时间短</item>
+
+        <item>其他</item>
+           
+    </string-array>
 </resources>

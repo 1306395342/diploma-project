@@ -1,6 +1,7 @@
 package lyytest.lyy.myapplication.service;
 
 
+import java.util.List;
 import java.util.Map;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -34,4 +35,16 @@ public interface ApiService {
                                                @Field("dpr")String dpregiont,@Field("dpdt")String dpregiondetailst,@Field("uid")int uid,
                                                @Field("size")String size
       );
+
+    @FormUrlEncoded
+    @POST("user/showuserorder")
+    Call<List<Map<String,Object>>> postShowUserOrder(@Field("orderstatus") int orderstatus, @Field("uid")int  uid);
+
+    @FormUrlEncoded
+    @POST("user/getTheOrderInformation")
+    Call<Map<String,Object>> postgetTheOrderInformation(@Field("oid") int oid);
+
+    @FormUrlEncoded
+    @POST("user/complaintorder")
+    Call<Map<String,Object>> postComplaint(@Field("oid") int oid,@Field("description") String description);
 }

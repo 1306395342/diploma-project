@@ -57,7 +57,10 @@
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name=".Activity.OrderActivity"></activity>
+        <activity android:name=".Activity.OrderActivity" />
+        <activity android:name=".Activity.TheOrderActivity" />
+        <activity android:name=".Activity.Refund_Activity" />
+        <activity android:name=".Activity.SearchOrderById"></activity>
     </application>
 
 </manifest>

@@ -46,7 +46,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             startActivity(intent);
             break;
             case R.id.order:
-                intent = new Intent(HomePageActivity.this, SendPackage.class);
+                intent = new Intent(HomePageActivity.this, OrderActivity.class);
                 startActivity(intent);
         }
 

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    >
+
+    <TextView
+        android:id="@+id/oidt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="订单号：24"
+        android:textColor="@color/login_form_details"
+        android:textSize="24dp" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/srealname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/oidt"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="快递员名字：hulk" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/sphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+       android:layout_below="@id/srealname"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="快递员手机号：123123123123" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/accept_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/sphone"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="申请快递时刻：2007-11-9" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/update_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/accept_time"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="开始配送时刻：2007-11-10" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/update_time"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="订单完成时刻：2007-11-12" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/from_where"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/end_time"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="起始地：花都区brabrabra花都区brabrabra花都区brabrabra花都区brabrabra" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/to_where"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/from_where"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="出发地：花都区brabrabra花都区brabrabra花都区brabrabra花都区brabrabra" />
+
+    <TextView
+        android:textColor="@color/login_form_details"
+        android:id="@+id/ostatuso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/to_where"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:text="当前状态:已接受订单未配送" />
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="255"
+        android:progress="255"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/location"
+        android:stepSize="1"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ostatuso"
+        android:padding="10dp"
+        android:text="快递员当前位置："
+        android:textColor="@color/login_form_details"
+        android:textSize="17dp" />
+    <ImageView
+        android:id="@+id/locationicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/location"
+        android:layout_below="@id/ostatuso"
+        android:src="@mipmap/mapiconfinal"
+        />
+    <Button
+        android:id="@+id/refund"
+        android:layout_width="290dp"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rating"
+        android:background="@drawable/btn_bg"
+        android:text="订单申请退款"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    >
+    <TextView
+        android:id="@+id/oidre"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="订单号：24"
+        android:textColor="@color/login_form_details"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/refundreasont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oidre"
+        android:padding="10dp"
+        android:text="退款原因: "
+        android:textColor="@color/login_form_details"
+        android:textSize="16dp" />
+    <Spinner
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/refundreasont"
+        android:entries="@array/reason" />
+
+    <EditText
+        android:id="@+id/otherreason"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/reason"
+        android:background="@drawable/et_bg"
+        android:textColorHint="@color/login_form_details"
+        android:lines="4"
+        android:gravity="top"
+        android:visibility="invisible"
+        android:hint="其他原因"
+        />
+    <Button
+        android:id="@+id/refundtheorder"
+        android:layout_width="290dp"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otherreason"
+        android:background="@drawable/btn_bg"
+        android:text="订单申请退款"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium" />
+</RelativeLayout>
